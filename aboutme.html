@@ -21,7 +21,7 @@
 		<div class="container">
 			<img class = "image" id="Fab1" src="fab1.png">
 			<img class = "image" id="Fab2" src="Fab2.png">
-			<img class = "image" id="Fab3" src="fab3.png">
+			<img class = "image" id="Fab3" src="fab3.png">	
 		</div>
 		<img class = "js"src="js.png">
 		<img class = "java"src="java.png">
@@ -40,7 +40,8 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
-	$(".image").on('load', function(){
+	$(window).on('load', function(){
+		console.log("loaded")
 		$(".container").css("display","inline-block")
 	});
 </script>
