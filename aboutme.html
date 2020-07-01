@@ -12,21 +12,23 @@
    <img class = "about"src="ABOUT.png">
  	 </a>
    <img class = "contact"src="contact.png"onclick="scrollWin()">
-	 <img class = "background2"src="background2.jpg">
+	 <img class = "background2" src="background2.jpg" >
    <div id="cont">
    <img class = "talk"src="Talk.png">
    <img class = "hi"src="hi.png">
 </div>
-		<img class = "PhilipAbout"src="PhilipAbout.png">
-		<img class = "Fab1"src="fab1.png">
-		<img class = "Fab2"src="Fab2.png">
-		<img class = "Fab3"src="fab3.png">
+		<img class = "PhilipAbout" src="PhilipAbout.png">
+		<div class="container">
+			<img class = "image" id="Fab1" src="fab1.png">
+			<img class = "image" id="Fab2" src="Fab2.png">
+			<img class = "image" id="Fab3" src="fab3.png">
+		</div>
 		<img class = "js"src="js.png">
 		<img class = "java"src="java.png">
 		<img class = "contacts" src="contacts-2.png">
-		<img class = "fb"src="facebook.png"onclick="window.location.href='https://www.facebook.com/Wenkzflip013'">
-		<img class = "tt"src="twitter.png"onclick="window.location.href='https://twitter.com/philipfabros27'">
-		<img class = "yt"src="youtube.png"onclick="window.location.href='https://www.youtube.com/channel/UC5VMV12QV7lS1Xh66I9G70g'">
+		<img class = "fb"src="facebook.png" onclick="window.location.href='https://www.facebook.com/Wenkzflip013'">
+		<img class = "tt"src="twitter.png" onclick="window.location.href='https://twitter.com/philipfabros27'">
+		<img class = "yt"src="youtube.png" onclick="window.location.href='https://www.youtube.com/channel/UC5VMV12QV7lS1Xh66I9G70g'">
 		<img class = "emp"src="empty.png">
 		<script>
 		function scrollWin() {
@@ -35,3 +37,10 @@
 		</script>
 </body>
 </html>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+	$(".image").on('load', function(){
+		$(".container").css("display","inline-block")
+	});
+</script>
