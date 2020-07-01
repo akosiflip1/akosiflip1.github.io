@@ -6,7 +6,13 @@
 	<link rel="stylesheet" href="aboutme.css">
 </head>
 <body>
-   <img class = "mainPicture" src="FabPicture.png">
+	<div class="loader">
+		<div class="loadingio-spinner-bean-eater-699moabviw"><div class="ldio-yzdl9wce19m">
+			<div><div></div><div></div><div></div></div><div><div></div><div></div><div></div></div>
+			</div></div>
+	</div>
+	<div class="root">
+		<img class = "mainPicture" src="FabPicture.png">
    <img class = "home"src="HOME.png"onclick="window.location.href='index.html'">
 	 <a href="fab.docx" download>
    <img class = "about"src="ABOUT.png">
@@ -35,13 +41,15 @@
 		  window.scrollBy(0, 2000);
 		}
 		</script>
+	</div>
+   
 </body>
 </html>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
 	$(window).on('load', function(){
-		console.log("loaded")
-		$(".container").css("display","inline-block")
+		$(".loader").css("display","none")
+		$(".root").css("display","inline-block")
 	});
 </script>
